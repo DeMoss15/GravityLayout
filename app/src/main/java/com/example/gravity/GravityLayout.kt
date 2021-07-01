@@ -50,7 +50,6 @@ class GravityLayout @JvmOverloads constructor(
         limits: RotationLimits
     ): Float {
         val corner = (cornerRad * 180 / Math.PI).toFloat()
-        return corner
         if (limits.centerValue == null && cornerRad != .0) {
             limits.centerValue = corner
         }
